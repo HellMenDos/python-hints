@@ -8,7 +8,7 @@ from typing import List, Dict, Tuple, \
     Set, Union, Optional, TypeVar, NewType, \
         TypedDict, Protocol, Awaitable, Callable, \
             Final, Literal, TypeGuard, Generic, ClassVar, NoReturn, Self, Iterable, Iterator, \
-                AsyncIterator, Sequence, Coroutine, overload \
+                AsyncIterator, Sequence, Coroutine, Any, overload \
                 
 
 # List, Dict, Tuple, Set
@@ -215,4 +215,9 @@ def get_first_element(seq: Sequence[int]) -> int:
 
 print(get_first_element([1, 2, 3]))  # List
 print(get_first_element((4, 5, 6)))  # Tuple
+
+# Any
+def print_value(value: Any) -> None:
+    print(value)
+
 ```
